@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+div[class^="inner-"] {
+    height: 70px;
+}
+
+
+.logo {
+    font-size: 3rem;
+    color: #00b1f6;
+}
+
+.inner-filter {
+    background: #00b1f6;
+}
+
+div.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-header > div.container {
+    justify-content: flex-start !important;
+    align-items: flex-end;
+}
+
+label {
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
