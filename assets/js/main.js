@@ -3,11 +3,11 @@ const showAll = () => {
 
     icons.forEach((icon) => {
         if (icon.type === "animal")
-            $("main > .container").append(`<div class="card"><i class="animal ${icon.family} ${icon.prefix}${icon.name}"></i></div>`);
+            $("main > .container").append(`<div class="card"><i class="animal ${icon.family} ${icon.prefix}${icon.name}"></i><span>${icon.name}</span></div>`);
         if (icon.type === "vegetable")
-            $("main > .container").append(`<div class="card"><i class="vegetable ${icon.family} ${icon.prefix}${icon.name}"></i></div>`);
+            $("main > .container").append(`<div class="card"><i class="vegetable ${icon.family} ${icon.prefix}${icon.name}"></i><span>${icon.name}</span></div>`);
         if (icon.type === "user")
-            $("main > .container").append(`<div class="card"><i class="user ${icon.family} ${icon.prefix}${icon.name}"></i></div>`);
+            $("main > .container").append(`<div class="card"><i class="user ${icon.family} ${icon.prefix}${icon.name}"></i><span>${icon.name}</span></div>`);
     });
 };
 
@@ -16,7 +16,7 @@ const showAnimals = () => {
 
     icons.forEach((icon) => {
         if (icon.type === "animal")
-            $("main > .container").append(`<div class="card"><i class="animal ${icon.family} ${icon.prefix}${icon.name}"></i></div>`);
+            $("main > .container").append(`<div class="card"><i class="animal ${icon.family} ${icon.prefix}${icon.name}"></i><span>${icon.name}</span></div>`);
     });
 };
 
@@ -25,7 +25,7 @@ const showVegetables = () => {
 
     icons.forEach((icon) => {
         if (icon.type === "vegetable")
-            $("main > .container").append(`<div class="card"><i class="vegetable ${icon.family} ${icon.prefix}${icon.name}"></i></div>`);
+            $("main > .container").append(`<div class="card"><i class="vegetable ${icon.family} ${icon.prefix}${icon.name}"></i><span>${icon.name}</span></div>`);
     });
 };
 
@@ -34,7 +34,7 @@ const showUsers = () => {
 
     icons.forEach((icon) => {
         if (icon.type === "user")
-            $("main > .container").append(`<div class="card"><i class="user ${icon.family} ${icon.prefix}${icon.name}"></i></div>`);
+            $("main > .container").append(`<div class="card"><i class="user ${icon.family} ${icon.prefix}${icon.name}"></i><span>${icon.name}</span></div>`);
     });
 };
 

@@ -24,7 +24,7 @@ div[class^="inner-"] {
 }
 
 div.container {
-    width: 60%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -42,4 +42,41 @@ label {
     color: #fff;
     text-transform: uppercase;
     margin-right: 10px;
+}
+
+main > div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+div.card {
+    font-size: 2rem;
+    flex: 0 1 15%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    margin: 40px 20px;
+    box-shadow: 1px 1px 2px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card > span {
+    font-size: .7rem;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+i.animal {
+    color: #3200ff;
+}
+
+i.vegetable {
+    color: #ffa500;
+}
+
+i.user {
+    color: #d10067;
 }
